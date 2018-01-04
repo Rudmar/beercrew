@@ -19,3 +19,4 @@ blaze-html-templates
 fortawesome:fontawesome
 twbs:bootstrap
 jquery
+iron:router
