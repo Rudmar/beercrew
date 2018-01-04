@@ -1,4 +1,5 @@
-Router.route('home', {path: '/'}); // Add this route
-Router.route('solucoes_Inteligentes', function () {
-  this.render('solucoesInteligentes');
+Router.route('/', function () {
+  this.render('Home', {
+    data: function () { return Items.findOne({_id: this.params._id}); }
+  });
 });
